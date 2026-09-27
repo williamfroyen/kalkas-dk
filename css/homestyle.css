@@ -88,7 +88,7 @@ a {
     top: -40px;
     left: 0;
     background: #000;
-    color: white;
+    color: #f1f1f1;
     padding: 8px;
     z-index: 100;
     transition: top 0.3s;
@@ -265,8 +265,14 @@ a {
 }
 
 #selectcategory #categoryselectionfield .categoryselection {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #0b9185;
     background-image: linear-gradient(90deg,#0c7c9e 0%,#0b9185 100%);
     font-size: 18px;
+    font-family: inherit;
+    font-weight: inherit;
     text-align: center;
     margin: 10px;
     padding: 13px 20px;
