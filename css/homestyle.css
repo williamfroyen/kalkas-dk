@@ -1,0 +1,611 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/font/Inter-Regular.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/font/Inter-Medium.woff2");
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+.hidden {
+    display: none !important;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.stortekst {
+    font-size: 20px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: None;
+    color: #ddfffa;
+    font-size: 18px;
+}
+
+.small-link {
+    font-size: 16px;
+}
+
+.text-page {
+    margin-top: 30px !important;
+}
+
+.text-page p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.text-page ul {
+    padding: 10px 0px 10px 30px;
+}
+
+.text-page h2 {
+    padding: 30px 0px 10px 0px !important;
+}
+
+.text-page h3 {
+    padding: 20px 0px 10px 0px !important;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+#menu {
+    display: block;
+    list-style-type: none;
+    padding: 23px;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#menu li a {
+    text-decoration: None;
+    color: #f1f1f1;
+    font-size: 18px;
+}
+
+#showcase {
+    height: 300px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,111,1) 61%);
+    text-align: center;
+    color: #f1f1f1;
+}
+
+#showcase h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    padding: 110px 20px 0px 20px;
+}
+
+#showcase p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 30px 200px;
+}
+
+#language-select {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    border-radius: 2px;
+}
+
+#language-select .country {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, #0c7c9e 0%, #0b9185 51%, #09796F 100%);
+    margin: 5px 2px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+#language-select .selected-country {
+    box-shadow: 0px 0px 0px 1px #f1f1f1 inset;
+}
+
+#language-select .country p {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+#search {
+    height: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+#search #searchinputfield {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#search #searchinputfield #searchinput {
+    font-size: 16px;
+    height: 35px;
+    width: 300px;
+    border-radius: 3px;
+    border-width: 3px;
+    text-indent: 5px;
+}
+
+#search #searchinputfield #searchinput:focus {
+    border-color: #75ffed;
+    outline: none;
+}
+
+#search #searchinputfield #searchlabel {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f1f1f1;
+    padding: 4px;
+    font-size: 18px;
+    height: 35px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#search #searchinputfield #searchlabel #searchlabeltext {
+    cursor: pointer;
+}
+
+#search .hidden {
+    display: none !important;
+}
+
+#search #searchresultfield {
+    position: relative;
+    z-index: 1000;
+    text-align: left;
+    background-image: linear-gradient(90deg, #075852 0%, #096963 50%, #096e68 100%);
+    width: 355px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+#search #searchresultfield #searchresultlist {
+    list-style: none;
+    padding: 20px;
+}
+
+#search #searchresultfield #searchresultlist li {
+    padding: 3px;
+    font-size: 18px;
+}
+
+#search #searchresultfield #searchresultlist a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+#selectcategory,
+#main-content {
+    width: 80vw;
+    margin: 0px auto;
+    background-color: #151f1e;
+    border-radius: 20px;
+}
+
+#main-content {
+    padding: 40px 30px 40px 30px;
+    margin-top: 30px;
+}
+
+#selectcategory {
+    padding: 30px 30px 0px 30px;
+}
+
+#selectcategory #categoryselectionfield {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#selectcategory h2 {
+    background-image: linear-gradient(90deg, #09796F 0%, #0c7c9e56 50%, #0c7c9e00 100%);
+    width: 30vw;
+    margin: 10px;
+    border-radius: 10px;
+    text-indent: 5px;
+}
+
+#selectcategory #categoryselectionfield .categoryselection {
+    background-image: linear-gradient(90deg,#0c7c9e 0%,#0b9185 100%);
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    padding: 13px 20px;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: box-shadow 0.2s, color 0.2s;
+}
+
+#selectcategory #categoryselectionfield .categoryselected {
+    background-image: linear-gradient(90deg,#0b9185 0%,#09796F 100%);
+    box-shadow: 0 0 1px 2px #fff;
+    color: #fff;
+}
+
+#selectcategory h2,
+#main-content h2 {
+    font-size: 26px;
+    padding: 10px;
+}
+
+#main-content h3 {
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.category-field {
+    padding: 0px 10px 30px 10px;
+}
+
+.category-field h2 {
+    padding-bottom: 5px;
+}
+
+.category-field ul {
+    list-style: none;
+}
+
+.category-field ul li {
+    padding-bottom: 3px;
+    margin-left: 5px;
+}
+
+.lispacer {
+    margin-bottom: 5px;
+}
+
+.paragraph {
+    padding-bottom: 15px;
+}
+
+#questions-title-margin {
+    margin-top: 40px;
+}
+
+#question-box {
+    padding: 15px;
+    background-color: #004B44;
+    border-radius: 15px;
+    margin: 15px;
+    width: 40vw;
+}
+
+#question-box #question a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+}
+
+footer #top-footer {
+    height: 50px;
+    background-color: #005c54;
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 15px;
+}
+
+footer #top-footer a {
+    color: #d1fff9;
+    text-decoration: none;
+}
+
+footer #bottom-footer {
+    position: relative;
+    height: 60px;
+    border-top: 5px;
+    background-color: #004B44;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+footer #bottom-footer a {
+    position: absolute;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+footer #bottom-footer #footerFirstElement {
+    left: 10%;
+    top: 33%;
+}
+
+footer #bottom-footer #footerLastElement {
+    right: 10%;
+    top: 33%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    a:hover {
+        color: #f1f1f1;
+    }
+
+    #menu li a:hover {
+        color: #75ffed;
+    }
+
+    #language-select .country:hover {
+        box-shadow: 0px 0px 0px 1px #f1f1f1 inset;
+        transition: box-shadow 0.1s, color 0.1s;
+        cursor: pointer;
+    }
+
+    #search #searchresultfield #searchresultlist a:hover {
+        color: #75ffed;
+    }
+
+    #selectcategory #categoryselectionfield .categoryselection:hover {
+        background-image: linear-gradient(90deg,#0b9185 0%,#09796F 100%);
+        box-shadow: 0 0 1px 2px #fff;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer #top-footer a:hover {
+        color: #8affef;
+    }
+
+    footer #bottom-footer a:hover {
+        color: #ddfffa;
+    }
+    
+    #question-box #question a:hover {
+        color: #75ffed;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #categories {
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        padding: 0px 50px;
+    }
+    #question-box {
+        width: 60vw;
+    }
+
+    #showcase p {
+        padding: 30px 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header #logo {
+        height: 60px;
+        width: 150px;
+    }
+
+    #showcase h1 {
+        font-size: 38px;
+    }
+
+    #showcase p {
+        font-size: 16px;
+    }
+
+    #menu {
+        padding: 20px 5px;
+    }
+
+    #menu li a {
+        font-size: 17px;
+    }
+
+     #selectcategory h2 {
+        margin: 5px;
+        width: 50vw;
+    }
+
+    #selectcategory #categoryselectionfield .categoryselection {
+        padding: 10px 15px;
+        margin: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    #showcase h1 {
+        font-size: 34px;
+    }
+
+    #showcase p {
+        padding: 30px 50px;
+    }
+
+    .text-page h2 {
+        font-size: 22px !important;
+    }
+
+    #categories {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 0px 10px;
+    }
+
+    #search {
+        margin: 70px 50px 50px 50px;
+    }
+
+    footer #bottom-footer {
+        text-align: center;
+        height: 90px;
+        padding: 10px;
+    }
+
+    footer #bottom-footer p {
+        padding: 10px;
+    }
+
+    footer #bottom-footer #footerFirstElement {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    footer #bottom-footer #footerLastElement {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #main-content {
+        width: 90vw;
+    }
+
+    #selectcategory {
+        width: 90vw;
+    }
+
+    #selectcategory #categoryselectionfield {
+        padding: 10px 0px 30px 0px;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    #menu li {
+        margin-right: 15px;
+    }
+
+    #question-box #question a {
+        font-size: 16px;
+    }
+
+    #question-box {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #selectcategory h2 {
+        width: 60vw;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #showcase h1 {
+        font-size: 30px;
+        padding: 100px 20px 0px 20px;
+    }
+
+    #showcase p {
+        padding: 30px 30px;
+    }
+
+    .text-page h2 {
+        font-size: 20px !important;
+    }
+
+    #menu li {
+        margin-right: 10px;
+    }
+
+    #main-content {
+        padding: 30px 20px;
+    }
+
+    #selectcategory {
+        padding: 30px 20px 0px 20px;
+    }
+
+    #search #searchinputfield #searchinput {
+        width: 250px;
+    }
+
+    #search #searchresultfield {
+        width: 305px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    #search #searchinputfield #searchinput {
+        width: 200px;
+    }
+
+    #search #searchresultfield {
+        width: 255px;
+        margin: 20px auto;
+    }
+
+    #selectcategory h2 {
+        width: 70vw;
+    }
+}

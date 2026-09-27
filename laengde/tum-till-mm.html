@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Tum till mm | Snabb och exakt kalkylator (inch till mm)</title>
+    <meta name="description" content="1 tum är lika med 25,4 millimeter. Behöver du en snabb och exakt omvandling från tum till millimeter? Få svaret på några sekunder med vår kalkylator!"/>
+    <link rel="icon" type="image/png" href="/photos/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/photos/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/photos/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/photos/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/photos/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/css/calcstyle.css">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "WebPage",
+            "@id": "https://www.kalkas.dk/langd/tum-till-mm.html#webpage",
+            "url": "https://www.kalkas.dk/langd/tum-till-mm.html",
+            "name": "Tum till millimeter-kalkylator (inch till mm)",
+            "description": "1 tum är lika med 25,4 millimeter. Behöver du en snabb och exakt omvandling från tum till millimeter? Få svaret på några sekunder med vår kalkylator!",
+            "inLanguage": "sv",
+            "publisher": {
+            "@type": "Organization",
+            "name": "kalkas.dk",
+            "url": "https://www.kalkas.dk/"
+            },
+            "isPartOf": {
+                "@id": "https://www.kalkas.dk/"
+            }
+            },
+            {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.kalkas.dk/langd/tum-till-mm.html#breadcrumb",
+            "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Forside",
+                "item": "https://www.kalkas.dk/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Längd",
+                "item": "https://www.kalkas.dk/langd/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Tum till millimeter",
+                "item": "https://www.kalkas.dk/langd/tum-till-mm.html"
+                }
+            ]
+            },
+            {
+            "@type": "FAQPage",
+            "@id": "https://www.kalkas.dk/langd/tum-till-mm.html#faq",
+            "mainEntity": [
+                {
+                "@type": "Question",
+                "name": "Hur omvandlar man tum till mm?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "För att omvandla tum till millimeter multiplicerar du antalet tum med 25,4. Till exempel: 10 tum * 25,4 = 254 mm."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Hur mycket är 1 tum i mm?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "1 tum är lika med 25,4 mm."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Är den här kalkylatorn gratis att använda?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, alla kalkylatorer på kalkas.dk är 100 % gratis och tillgängliga utan registrering."
+                }
+                }
+            ]
+            },
+            {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.kalkas.dk/langd/tum-till-mm.html#app",
+            "name": "Tum till millimeter-kalkylator",
+            "applicationCategory": "Calculator",
+            "applicationSubCategory": "UnitConversionApplication",
+            "operatingSystem": "Web",
+            "url": "https://www.kalkas.dk/langd/tum-till-mm.html",
+            "inLanguage": "sv",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "SEK"
+            }
+            }
+        ]
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="/"><img id="logo" width="175" height="70" alt="Kalkas" src="/photos/logo/kalkas-100px.png"></a>
+        <nav aria-label="Huvudmeny">
+            <ul id="menu">
+                <li>
+                    <a href="/">Forside</a>
+                </li>
+                <li>
+                    <a href="/kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="showcase" id="calc-showcase">
+        <h1>Omvandla Tum till Millimeter</h1>
+    </section>
+    <main id="calculator">
+        <div>
+            <div class="input">
+                <p>Tum (inch)</p>
+                <input id="input1" type="text" inputmode="decimal" placeholder="in" data-calctype="tommer-til-mm">
+            </div>
+            <a href="mm-till-tum.html" id="switch-link" aria-label="Ändra omvandlingsriktning">
+                <img src="/photos/icons/switch.svg" width="25" height="25" id="switch-icon" alt="">
+            </a>
+            <div class="output">
+                <p>Millimeter (mm)</p>
+                <input id="output1" type="text" placeholder="mm" readonly>
+            </div>
+            <div id="errorMessageContainer" class="hidden">
+                <p id="errorMessageText"></p>
+            </div>
+            <div id="description">
+                <p class="paragraph">
+                    1 tum är lika med 25,4 millimeter. Formeln för att omvandla från tum till millimeter (inch till mm) är: Millimeter = tum * 25,4.
+                </p>
+                <div id="tablecontainer">
+                <h2>Tabell för tum till millimeter</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tum (inch)</th>
+                            <th scope="col">Millimeter (mm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1/4"</td>
+                            <td>6,35 mm</td>
+                        </tr>
+                        <tr>
+                            <td>1/2"</td>
+                            <td>12,7 mm</td>
+                        </tr>
+                        <tr>
+                            <td>3/4"</td>
+                            <td>19,05 mm</td>
+                        </tr>
+                        <tr>
+                            <td>1"</td>
+                            <td>25,4 mm</td>
+                        </tr>
+                        <tr>
+                            <td>2"</td>
+                            <td>50,8 mm</td>
+                        </tr>
+                        <tr>
+                            <td>3"</td>
+                            <td>76,2 mm</td>
+                        </tr>
+                        <tr>
+                            <td>4"</td>
+                            <td>101,6 mm</td>
+                        </tr>
+                        <tr>
+                            <td>5"</td>
+                            <td>127,0 mm</td>
+                        </tr>
+                        <tr>
+                            <td>6"</td>
+                            <td>152,4 mm</td>
+                        </tr>
+                        <tr>
+                            <td>7"</td>
+                            <td>177,8 mm</td>
+                        </tr>
+                        <tr>
+                            <td>8"</td>
+                            <td>203,2 mm</td>
+                        </tr>
+                        <tr>
+                            <td>43"</td>
+                            <td>1092,2 mm</td>
+                        </tr>
+                        <tr>
+                            <td>55"</td>
+                            <td>1397,0 mm</td>
+                        </tr>
+                        <tr>
+                            <td>65"</td>
+                            <td>1651,0 mm</td>
+                        </tr>
+                        <tr>
+                            <td>75"</td>
+                            <td>1905,0 mm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <search id="search">
+                    <p>Sök efter andra kalkylatorer:</p>
+                    <div id="searchinputfield">
+                        <div id="searchlabel">
+                            <p id="searchlabeltext">Sök</p>
+                        </div>
+                        <input type="text" id="searchinput" placeholder="Sök kalkylatorer…">
+                    </div>
+                    <div id="searchresultfield" class="hidden">
+                        <ul id="searchresultlist"></ul>
+                    </div>
+                </search>
+                <p>Andra längdkalkylatorer:</p>
+                <ul>
+                    <li><a href="/langd/meter-till-fot.html">Meter till fot</a></li>
+                    <li><a href="/langd/fot-till-meter.html">Fot till meter</a></li>
+                    <li><a href="/langd/cm-till-fot.html">Centimeter till fot</a></li>
+                    <li><a href="/langd/fot-till-cm.html">Fot till centimeter</a></li>
+                    <li><a href="/langd/cm-till-tum.html">Centimeter till tum</a></li>
+                    <li><a href="/langd/tum-till-cm.html">Tum till centimeter</a></li>
+                    <li><a href="/langd/mm-till-tum.html">Millimeter till tum</a></li>
+                    <li><a href="/langd/kilometer-till-mil.html">Kilometer till mil</a></li>
+                    <li><a href="/langd/mil-till-kilometer.html">Mil till kilometer</a></li>
+                    <li><a href="/langd/km-till-nautiska-mil.html">Kilometer till nautiska mil</a></li>
+                    <li><a href="/langd/nautiska-mil-till-km.html">Nautiska mil till kilometer</a></li>
+                    <li><a href="/langd/meter-till-yard.html">Meter till yard</a></li>
+                    <li><a href="/langd/yard-till-meter.html">Yard till meter</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="top-footer">
+            <p>Utvecklad av <a href="https://williamfroyen.com" target="_blank" rel="noopener noreferrer">William Frøyen</a></p>
+        </div>
+        <div id="bottom-footer">
+            <p>Copyright 2026 © Kalkas</p>
+            <a id="footerFirstElement" href="/villkor-for-anvandning.html">Brugsbetingelser</a>
+            <a id="footerLastElement" href="/integritetpolicy.html">Integritetspolicy</a>
+        </div>
+    </footer>
+    <script src="../js/shared/oneinputcalc.js" type="module"></script>
+    <script src="../js/features/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+</body>
+</html>
