@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Omregn Kelvin til Celsius (K til C)</title>
+    <meta name="description" content="Vores omregner omregner nemt Kelvin til Celsius på få sekunder. Få et præcist resultat med det samme."/>
+    <link rel="icon" type="image/png" href="/photos/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/photos/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/photos/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/photos/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/photos/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/css/calcstyle.css">
+     <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "WebPage",
+            "@id": "https://www.kalkas.dk/temperatur/kelvin-til-celsius.html#webpage",
+            "url": "https://www.kalkas.dk/temperatur/kelvin-til-celsius.html",
+            "name": "Omregn Kelvin til Celsius (K til C)",
+            "description": "Omregn fra Kelvin til Celsius (K til C) med vores præcise digitale omregner. Få hurtig, nem og gratis temperaturomregning med denne online enhedsomregner.",
+            "inLanguage": "da",
+            "publisher": {
+            "@type": "Organization",
+            "name": "kalkas.dk",
+            "url": "https://www.kalkas.dk/"
+            },
+            "isPartOf": {
+                "@id": "https://www.kalkas.dk/"
+            }
+            },
+            {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.kalkas.dk/temperatur/kelvin-til-celsius.html#breadcrumb",
+            "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Forside",
+                "item": "https://www.kalkas.dk/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Temperatur",
+                "item": "https://www.kalkas.dk/temperatur/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Kelvin til Celsius",
+                "item": "https://www.kalkas.dk/temperatur/kelvin-til-celsius.html"
+                }
+            ]
+            },
+            {
+            "@type": "FAQPage",
+            "@id": "https://www.kalkas.dk/temperatur/kelvin-til-celsius.html#faq",
+            "mainEntity": [
+                {
+                "@type": "Question",
+                "name": "Hvordan omregner man Kelvin til Celsius?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For at omregne fra Kelvin til Celsius trækker man 273,15 fra antallet af Kelvin for at få temperaturen i grader Celsius. Eksempel: 0 K - 273,15 = -273,15 °C."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Hvad er 0 Kelvin i Celsius?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "0 Kelvin svarer til -273,15 grader Celsius."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Hvad er 100 Kelvin i Celsius?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "100 Kelvin svarer til -173,15 grader Celsius."
+                }
+                },
+                {
+                "@type": "Question",
+                "name": "Er denne omregner gratis at bruge?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, alle omregnere på kalkas.dk er helt gratis og kan bruges uden registrering."
+                }
+                }
+            ]
+            },
+            {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.kalkas.dk/temperatur/kelvin-til-celsius.html#app",
+            "name": "Kelvin til Celsius-omregner",
+            "applicationCategory": "Calculator",
+            "applicationSubCategory": "UnitConversionApplication",
+            "operatingSystem": "Web",
+            "url": "https://www.kalkas.dk/temperatur/kelvin-til-celsius.html",
+            "inLanguage": "da",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "DKK"
+            }
+            }
+        ]
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="/"><img id="logo" width="175" height="70" alt="Kalkas" src="/photos/logo/kalkas-100px.png"></a>
+        <nav aria-label="Hovedmenu">
+            <ul id="menu">
+                <li>
+                    <a href="/">Forside</a>
+                </li>
+                <li>
+                    <a href="/kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="showcase" id="calc-showcase">
+        <h1>Kelvin til Celsius</h1>
+    </section>
+    <main id="calculator">
+        <div>
+            <div class="input">
+                <p>Kelvin</p>
+                <input id="input1" type="text" inputmode="decimal" placeholder="K" data-calctype="kelvin-til-celsius">
+            </div>
+            <a href="celsius-til-kelvin.html" id="switch-link" aria-label="Skift omregningsretning">
+                <img src="/photos/icons/switch.svg" width="25" height="25" id="switch-icon" alt="">
+            </a>
+            <div class="output">
+                <p>Celsius</p>
+                <input id="output1" type="text" placeholder="°C" readonly>
+            </div>
+            <div id="errorMessageContainer" class="hidden">
+                <p id="errorMessageText"></p>
+            </div>
+            <div id="description">
+                <p class="paragraph">
+                    For at omregne fra Kelvin til Celsius trækker man 273,15 fra antallet af Kelvin for at få temperaturen i grader Celsius. Formlen er: °C = K - 273,15. 
+                </p>
+                <div id="tablecontainer">
+                    <h2>Tabel for Kelvin til Celsius</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Kelvin (K)</th>
+                                <th scope="col">Celsius (°C)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0 K</td>
+                                <td>-273,15 °C</td>
+                            </tr>
+                            <tr>
+                                <td>100 K</td>
+                                <td>-173,15 °C</td>
+                            </tr>
+                            <tr>
+                                <td>200 K</td>
+                                <td>-73,15 °C</td>
+                            </tr>
+                            <tr>
+                                <td>273,15 K</td>
+                                <td>0 °C</td>
+                            </tr>
+                            <tr>
+                                <td>293,15 K</td>
+                                <td>20 °C</td>
+                            </tr>
+                            <tr>
+                                <td>300 K</td>
+                                <td>26,85 °C</td>
+                            </tr>
+                            <tr>
+                                <td>310,15 K</td>
+                                <td>37 °C</td>
+                            </tr>
+                            <tr>
+                                <td>373,15 K</td>
+                                <td>100 °C</td>
+                            </tr>
+                            <tr>
+                                <td>500 K</td>
+                                <td>226,85 °C</td>
+                            </tr>
+                            <tr>
+                                <td>1000 K</td>
+                                <td>726,85 °C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <search id="search">
+                    <p>Søg efter andre omregnere:</p>
+                    <div id="searchinputfield">
+                        <div id="searchlabel">
+                            <p id="searchlabeltext">Søg</p>
+                        </div>
+                        <input type="text" id="searchinput" placeholder="Søg efter beregnere…">
+                    </div>
+                    <div id="searchresultfield" class="hidden">
+                        <ul id="searchresultlist"></ul>
+                    </div>
+                </search>
+                <p>Andre temperaturomregnere:</p>
+                <ul>
+                    <li><a href="/temperatur/celsius-til-fahrenheit.html">Celsius til Fahrenheit</a></li>
+                    <li><a href="/temperatur/fahrenheit-til-celsius.html">Fahrenheit til Celsius</a></li>
+                    <li><a href="/temperatur/celsius-til-kelvin.html">Celsius til Kelvin</a></li>
+                    <li><a href="/temperatur/fahrenheit-til-kelvin.html">Fahrenheit til Kelvin</a></li>
+                    <li><a href="/temperatur/kelvin-til-fahrenheit.html">Kelvin til Fahrenheit</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="top-footer">
+            <p>Udviklet af <a href="https://williamfroyen.com" target="_blank" rel="noopener noreferrer">William Frøyen</a></p>
+        </div>
+        <div id="bottom-footer">
+            <p>Copyright 2026 © Kalkas</p>
+            <a id="footerFirstElement" href="/brugsbetingelser.html">Brugsbetingelser</a>
+            <a id="footerLastElement" href="/privatlivspolitik.html">Privatlivspolitik</a>
+        </div>
+    </footer>
+    <script src="../js/shared/oneinputcalc.js" type="module"></script>
+    <script src="../js/features/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+</body>
+</html>

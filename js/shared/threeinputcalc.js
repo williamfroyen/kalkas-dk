@@ -24,18 +24,18 @@ function errorCheck() {
     
     if (numberArray === "invalidInput") {
         errorDiv.classList.remove("hidden");
-        errorTxt.textContent="Kun tall, komma og punktum er tillatt.";
+        errorTxt.textContent="Kun tal, komma og punktum er tilladt";
 
     } else if (numberArray === "tooManyPeriods") {
         errorDiv.classList.remove("hidden");
-        errorTxt.textContent="Kun ett komma eller punktum er tillatt.";
+        errorTxt.textContent="Kun ét komma eller punktum er tilladt";
 
     } else if (numberArray) {
         const [input1, input2, input3] = numberArray;
 
         if (config.noZero === true && (input1 === 0 || input2 === 0 || input3 === 0)) {
             errorDiv.classList.remove("hidden");
-            errorTxt.textContent="Ingen av verdiene kan være lik 0.";
+            errorTxt.textContent="Ingen af værdierne må være lig med 0";
             
         } else {
             calculate(numberArray);

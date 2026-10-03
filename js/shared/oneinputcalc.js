@@ -18,16 +18,16 @@ inputElement.addEventListener("input", (e) => {
 
     if (preppedArray === "invalidInput") {
         errorDiv.classList.remove("hidden");
-        errorTxt.textContent="Kun tall, komma og punktum er tillatt.";
+        errorTxt.textContent="Kun tal, komma og punktum er tilladt";
 
     } else if (preppedArray === "tooManyPeriods") {
         errorDiv.classList.remove("hidden");
-        errorTxt.textContent="Kun ett komma eller punktum er tillatt.";
+        errorTxt.textContent="Kun ét komma eller punktum er tilladt";
 
     } else if (preppedArray) {
         if (config.noZero === true && preppedArray[0] === 0) {
             errorDiv.classList.remove("hidden");
-            errorTxt.textContent="Verdien kan ikke være lik 0.";
+            errorTxt.textContent="Værdien må ikke være lig med 0";
             
         } else {
             calculate(preppedArray[0]);

@@ -118,7 +118,7 @@ export function prepOut(value, decimals) {
         correctedValue = value - Number.EPSILON;
     };
 
-    const formatter = new Intl.NumberFormat('sv-SE', { 
+    const formatter = new Intl.NumberFormat('da-DK', { 
         minimumFractionDigits: 0, 
         maximumFractionDigits: decimals
     });
